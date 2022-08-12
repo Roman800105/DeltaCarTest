@@ -31,12 +31,13 @@ create table dbo.Orders (
 	foreign key (CustomerId) references dbo.Customers(Id)
 )
 
---insert into dbo.Customers(Name) values ('Max'),('Pavel'),('Ivan'),('Leonid')
-select * from dbo.Customers
+insert into dbo.Customers(Name) values ('Max'),('Pavel'),('Ivan'),('Leonid')
 
---insert into dbo.Orders(CustomerId) values (2),(4)
-select * from dbo.Orders
+insert into dbo.Orders(CustomerId) values (2),(4)
 */
+
+--select * from dbo.Customers
+--select * from dbo.Orders
 
 select c.Name [Customers]
 from dbo.Customers c 
